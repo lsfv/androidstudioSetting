@@ -1,0 +1,39 @@
+<templateSet group="surround">
+  <template name="T" value="try&#10;{&#10;    $SELECTION$&#10;}&#10;catch&#10;{&#10;}" description="Mytry catch" toReformat="false" toShortenFQNames="true" />
+  <template name="M" value="try {&#10;            $SELECTION$}&#10;        catch (Exception e) {&#10;            LSLog.Log_Exception(e); }" description="MY trycatch" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="IP" value="$SELECTION$&#10;import com.linson.android.hiandroid2.R;" description="import R" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="RF" value="    //region &#10;    $SELECTION$&#10;    //endregion" description="REGION" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="E" value="    //region difine controls. Auto generate don't modify&#10;    $SELECTION$&#10;    //endregion" description="Auto generate don't modify" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="CM" value="    //region Controls member&#10;    $SELECTION$&#10;    //endregion" description="Controls member" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="A" value="findControls();&#10;//region  findcontrols and bind click event.&#10;private void findControls()&#10;{   //findControls&#10;    $SELECTION$&#10;&#10;    //set event handler&#10;    XXX.setOnClickListener(this);&#10;}&#10;@Override&#10;public void onClick(View v)&#10;{&#10;    switch (v.getId()) {&#10;        &#10;        default: {&#10;            break; }&#10;    }&#10;}&#10;//endregion&#10;&#10;//region other member variable&#10;//endregion" description="auto manager controls" toReformat="false" toShortenFQNames="true" />
+  <template name="F" value="mMyControls=new MyControls();//cut it into 'onCreate'&#10;//region The class of FindControls&#10;private MyControls mMyControls=null;&#10;public class MyControls&#10;{&#10;    $SELECTION$&#10;}&#10;//endregion" description="ABC" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="D" value="public MyControls()&#10;{&#10;    $SELECTION$&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,32 @@
+<application>
+  <component name="TemplateSettings">
+    <option name="deletedKeys">
+      <list>
+        <TemplateKey>
+          <option name="groupName" value="surround" />
+          <option name="key" value="B" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="surround" />
+          <option name="key" value="P" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="surround" />
+          <option name="key" value="C" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="surround" />
+          <option name="key" value="RL" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="surround" />
+          <option name="key" value="WL" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="surround" />
+          <option name="key" value="I" />
+        </TemplateKey>
+      </list>
+    </option>
+  </component>
+</application>
